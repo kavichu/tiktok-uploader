@@ -1,8 +1,9 @@
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
-  - name: Script Task
-    init: pip install git+https://github.com/pytube/pytube # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: echo 'start script'
+  - name: Clone pytube
+    command: pip install git+https://github.com/pytube/pytube # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
+  - name: Clone TiktokUploader
+    command: git clone https://github.com/makiisthenes/TiktokAutoUploader.git
 
 image:
   file: .gitpod.Dockerfile
